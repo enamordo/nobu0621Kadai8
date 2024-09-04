@@ -10,20 +10,21 @@ import SwiftUI
 struct ContentView: View {
     @State private var selectedTag = 1
     @State private var selectedValue = 0.0
-    
+
     var body: some View {
         TabView(selection: $selectedTag) {
             TabPageView(
                 selectedValue: $selectedValue,
                 color: Color.pink
             )
-            .tabItem { Text("item 1")}
+            .tabItem { Text("item 1") }
             .tag(1)
+
             TabPageView(
                 selectedValue: $selectedValue,
                 color: Color.green
             )
-            .tabItem { Text("item 2")}
+            .tabItem { Text("item 2") }
             .tag(2)
         }
     }
