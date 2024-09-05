@@ -17,13 +17,13 @@ struct ContentView: View {
                 selectedValue: $selectedValue,
                 color: Color.pink
             )
-            .tabItem { Text("item 1")}
+            .tabItem { Text("item 1") }
             .tag(1)
             TabPageView(
                 selectedValue: $selectedValue,
                 color: Color.green
             )
-            .tabItem { Text("item 2")}
+            .tabItem { Text("item 2") }
             .tag(2)
         }
     }

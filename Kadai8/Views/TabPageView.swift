@@ -10,7 +10,7 @@ import SwiftUI
 struct TabPageView: View {
     @Binding var selectedValue: Double
     let color: Color
-    
+
     var body: some View {
         ZStack {
             color.ignoresSafeArea(edges: [.top])
